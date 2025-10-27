@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Marbles and Granites - Premium Natural Stone Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="RK Marbles and Granites" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">RK Marbles & Granites</h1>
+            <p class="hero-subtitle">Wholesale Supplier of Premium Natural Stones<br>Trusted by Builders & Contractors Nationwide</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn btn-primary">Explore Collection</a>
+                <a href="#contact" class="btn btn-secondary">Request Quote</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Premium Marble and Granite Tiles" class="hero-img">
+        </div>
+    </section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Premium Marble & Granite Collection</p>
+            </div>
+            <div class="product-categories">
+                <div class="category">
+                    <div class="category-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Marble</h3>
+                    <p>Elegant and timeless marble varieties for luxury applications</p>
+                    <div class="category-features">
+                        <span>Premium Quality</span>
+                        <span>Various Finishes</span>
+                        <span>Custom Sizes</span>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="category-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Granite</h3>
+                    <p>Durable and beautiful granite options for all projects</p>
+                    <div class="category-features">
+                        <span>High Durability</span>
+                        <span>Natural Patterns</span>
+                        <span>Bulk Supply</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Collection</h2>
+                <p>Wholesale prices for bulk orders - Contact for detailed pricing</p>
+            </div>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="marble">Marble</button>
+                <button class="filter-btn" data-filter="granite">Granite</button>
+                <button class="filter-btn" data-filter="special">Special Stones</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="marble">
+                    <div class="product-image">
+                        <img src="img/1.jpg" alt="Premium White Marble" class="product-img">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('marble-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('marble-1')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium White Marble</h3>
+                        <p class="product-description">Elegant white marble with subtle veining, perfect for luxury interiors</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 18mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹800-1200/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('marble-1')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="granite">
+                    <div class="product-image">
+                        <img src="img/2.jpg" alt="Classic Black Granite" class="product-img">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('granite-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('granite-1')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Black Granite</h3>
+                        <p class="product-description">Durable black granite with natural patterns, ideal for countertops</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 20mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹600-900/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('granite-1')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="marble">
+                    <div class="product-image">
+                        <img src="img/3.jpg" alt="Luxury Veined Marble" class="product-img">
+                        <div class="product-badge">Premium</div>
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('marble-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('marble-2')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Luxury Veined Marble</h3>
+                        <p class="product-description">Sophisticated marble with unique patterns, perfect for statement pieces</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 18mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹1200-1800/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('marble-2')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="granite">
+                    <div class="product-image">
+                        <img src="img/4.jpg" alt="Premium Speckled Granite" class="product-img">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('granite-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('granite-2')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Speckled Granite</h3>
+                        <p class="product-description">High-quality granite with mineral inclusions, great for flooring</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 20mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹700-1000/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('granite-2')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="special">
+                    <div class="product-image">
+                        <img src="img/5.jpg" alt="Exotic Natural Stone" class="product-img">
+                        <div class="product-badge">Exotic</div>
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('special-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('special-1')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Exotic Natural Stone</h3>
+                        <p class="product-description">Unique natural stone variety with distinctive patterns</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 18mm</span>
+                            <span class="spec">Finish: Honed</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹1500-2500/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('special-1')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="granite">
+                    <div class="product-image">
+                        <img src="img/6.jpg" alt="Dark Granite with Accents" class="product-img">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('granite-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('granite-3')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Dark Granite with Accents</h3>
+                        <p class="product-description">Striking dark granite with light accents, perfect for modern designs</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 20mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹800-1200/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('granite-3')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="marble">
+                    <div class="product-image">
+                        <img src="img/7.jpg" alt="Dramatic Veined Marble" class="product-img">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('marble-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('marble-3')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Dramatic Veined Marble</h3>
+                        <p class="product-description">Beautiful marble with dramatic veining, ideal for feature walls</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 18mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹1000-1500/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('marble-3')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="granite">
+                    <div class="product-image">
+                        <img src="img/8.jpg" alt="Textured Granite" class="product-img">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('granite-4')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('granite-4')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Textured Granite</h3>
+                        <p class="product-description">Textured granite with mineral inclusions, great for outdoor use</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 20mm</span>
+                            <span class="spec">Finish: Honed</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹600-900/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('granite-4')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="special">
+                    <div class="product-image">
+                        <img src="img/9.jpg" alt="Unique Pattern Stone" class="product-img">
+                        <div class="product-badge">Limited</div>
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('special-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('special-2')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Unique Pattern Stone</h3>
+                        <p class="product-description">One-of-a-kind natural stone pattern, perfect for exclusive projects</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 18mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹2000-3000/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('special-2')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="marble">
+                    <div class="product-image">
+                        <img src="img/10.jpg" alt="Classic White Marble" class="product-img">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('marble-4')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('marble-4')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic White Marble</h3>
+                        <p class="product-description">Timeless marble for elegant spaces, perfect for bathrooms</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 18mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹900-1300/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('marble-4')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="granite">
+                    <div class="product-image">
+                        <img src="img/11.jpg" alt="Rich Textured Granite" class="product-img">
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('granite-5')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('granite-5')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rich Textured Granite</h3>
+                        <p class="product-description">Rich granite with natural texture, ideal for kitchen countertops</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 20mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹700-1100/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('granite-5')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="special">
+                    <div class="product-image">
+                        <img src="img/12.jpg" alt="Exotic Marble" class="product-img">
+                        <div class="product-badge">Rare</div>
+                        <div class="product-actions">
+                            <button class="action-btn" onclick="viewProduct('special-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button class="action-btn" onclick="requestQuote('special-3')">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Exotic Marble</h3>
+                        <p class="product-description">Rare marble with unique characteristics, perfect for luxury projects</p>
+                        <div class="product-specs">
+                            <span class="spec">Thickness: 18mm</span>
+                            <span class="spec">Finish: Polished</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price-range">₹1800-2500/sq ft</span>
+                            <button class="btn btn-primary" onclick="requestQuote('special-3')">Get Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-cta">
+                <h3>Need Custom Sizes or Bulk Orders?</h3>
+                <p>Contact us for wholesale pricing and custom specifications</p>
+                <a href="#contact" class="btn btn-primary">Contact for Bulk Orders</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About RK Marbles & Granites</h2>
+                <div class="about-text">
+                    <p class="about-description">
+                        <strong>Owner: Rakesh Kumawat</strong><br><br>
+                        With years of experience in the marble and granite industry, RK Marbles & Granites has been serving wholesale clients with the finest quality natural stones. We specialize in providing premium marbles, granites, and other natural stone products for commercial and residential projects.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-gem"></i>
+                            <span>Premium Quality Stones</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Wholesale Supply</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-handshake"></i>
+                            <span>Trusted Partner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h2>Contact Us</h2>
+                    <p>Ready to transform your space with premium natural stones?</p>
+                </div>
+                
+                <div class="contact-main">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Call Us Now</h3>
+                                <p class="phone-number">+91 8766995962</p>
+                                <span>Available 9 AM - 7 PM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Owner</h3>
+                                <p>Rakesh Kumawat</p>
+                                <span>RK Marbles & Granites</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Specialization</h3>
+                                <p>Wholesale Supply</p>
+                                <span>Marble & Granite</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Get Quote</h3>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="">Select Service</option>
+                                    <option value="marble">Marble Supply</option>
+                                    <option value="granite">Granite Supply</option>
+                                    <option value="countertops">Countertops</option>
+                                    <option value="flooring">Flooring</option>
+                                    <option value="bulk">Bulk Order</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Tell us about your project requirements..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="RK Marbles and Granites" class="footer-logo-img">
+                    <h3>RK Marbles & Granites</h3>
+                    <p>Your trusted partner for premium natural stone solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Marble Supply</li>
+                        <li>Granite Supply</li>
+                        <li>Countertop Solutions</li>
+                        <li>Flooring Options</li>
+                        <li>Wholesale Supply</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-user"></i> Rakesh Kumawat</p>
+                    <p><i class="fas fa-phone"></i> +91 8766995962</p>
+                    <p><i class="fas fa-envelope"></i> info@rkmarbles.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RK Marbles & Granites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
